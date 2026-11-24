@@ -1,0 +1,213 @@
+{
+  "settingsNotice": "Sample prices – replace before launch",
+  "showSampleBanner": true,
+
+  "company": {
+    "name": "Aura Calculator",
+    "tagline": "Solar, CCTV and networking installers across Pakistan",
+    "description": "Aura Calculator designs and installs solar power systems, CCTV security and office networks for homes, shops, offices and buildings across Pakistan.",
+    "whatsappNumber": "923001234567",
+    "logoUrl": "/images/logo-placeholder.svg",
+    "email": "",
+    "address": "",
+    "workingHours": "",
+    "serviceAreaText": "Serving customers across Pakistan"
+  },
+
+  "colors": {
+    "ink": "#0a2530",
+    "panel": "#0f4a45",
+    "accent": "#f5b50a",
+    "onAccent": "#0a2530",
+    "signal": "#1fa35a",
+    "signalStrong": "#157a43",
+    "surface": "#ffffff",
+    "surfaceAlt": "#eef2f3",
+    "text": "#10222c",
+    "textMuted": "#4a5c66",
+    "onInk": "#ffffff",
+    "onInkMuted": "#b9cdd0",
+    "border": "#d5dfe1",
+    "danger": "#b42318",
+    "dangerBg": "#fdecea"
+  },
+
+  "format": {
+    "currencyLabel": "PKR",
+    "locale": "en-US"
+  },
+
+  "cities": [
+    { "id": "karachi", "name": "Karachi", "peakSunHours": 5.4, "costMultiplier": 1.0 },
+    { "id": "lahore", "name": "Lahore", "peakSunHours": 5.0, "costMultiplier": 1.0 },
+    { "id": "islamabad", "name": "Islamabad", "peakSunHours": 4.8, "costMultiplier": 1.0 },
+    { "id": "rawalpindi", "name": "Rawalpindi", "peakSunHours": 4.8, "costMultiplier": 1.0 },
+    { "id": "faisalabad", "name": "Faisalabad", "peakSunHours": 5.1, "costMultiplier": 1.0 },
+    { "id": "multan", "name": "Multan", "peakSunHours": 5.5, "costMultiplier": 1.0 },
+    { "id": "gujranwala", "name": "Gujranwala", "peakSunHours": 5.0, "costMultiplier": 1.0 },
+    { "id": "sialkot", "name": "Sialkot", "peakSunHours": 4.8, "costMultiplier": 1.0 },
+    { "id": "hyderabad", "name": "Hyderabad", "peakSunHours": 5.5, "costMultiplier": 1.0 },
+    { "id": "peshawar", "name": "Peshawar", "peakSunHours": 4.9, "costMultiplier": 1.02 },
+    { "id": "quetta", "name": "Quetta", "peakSunHours": 5.8, "costMultiplier": 1.05 },
+    { "id": "other", "name": "Other city", "peakSunHours": 5.0, "costMultiplier": 1.05 }
+  ],
+
+  "solar": {
+    "label": "Sample prices – replace before launch",
+    "input": {
+      "defaultMode": "bill",
+      "minBill": 1000,
+      "maxBill": 500000,
+      "minUnits": 50,
+      "maxUnits": 10000,
+      "exampleBill": 30000,
+      "exampleUnits": 600
+    },
+    "tariffPerUnit": 50,
+    "daysPerMonth": 30,
+    "systemEfficiency": 0.78,
+    "targetOffset": 0.9,
+    "sizing": { "stepKw": 0.5, "minKw": 3, "maxKw": 100 },
+    "pricePerKw": 160000,
+    "fixedCharges": 35000,
+    "costRange": { "low": 0.92, "high": 1.12 },
+    "savingsRange": { "low": 0.8, "high": 0.98 },
+    "rounding": { "costTo": 5000, "savingsTo": 100, "paybackDecimals": 1 },
+    "roofTypes": [
+      { "id": "flat-rcc", "label": "Flat concrete (RCC) roof", "costMultiplier": 1.0, "yieldMultiplier": 1.0 },
+      { "id": "tile", "label": "Sloped or tiled roof", "costMultiplier": 1.08, "yieldMultiplier": 0.97 },
+      { "id": "metal", "label": "Metal sheet roof", "costMultiplier": 1.05, "yieldMultiplier": 0.98 },
+      { "id": "ground", "label": "Open ground or terrace structure", "costMultiplier": 1.15, "yieldMultiplier": 1.02 }
+    ],
+    "previewExample": { "mode": "bill", "amount": "30000", "cityId": "lahore", "roofId": "flat-rcc" },
+    "explanation": [
+      "Your usage: about {monthlyUnits} units (kWh) a month, which is about {monthlyBill} a month at an average rate of {tariff} per unit.",
+      "In {city}, one kW of panels on a {roof} makes about {yieldPerKw} units a month. We assume {sunHours} peak sun hours a day and {efficiency}% overall system efficiency.",
+      "To cover about {offset}% of your usage you need roughly {rawKw} kW. We round up to a standard size: {sizeKw} kW.",
+      "Cost: {sizeKw} kW at {pricePerKw} per kW, adjusted for {city} and your roof type, plus {fixedCharges} of fixed charges. We show a range of {costLow}% to {costHigh}% of that figure.",
+      "Savings: the system makes about {generatedUnits} units a month. We value the units you no longer buy at {tariff} each and show {savingsLow}% to {savingsHigh}% of that.",
+      "Payback: system cost divided by yearly savings. The short end pairs the lowest cost with the highest saving; the long end pairs the highest cost with the lowest saving."
+    ]
+  },
+
+  "cctv": {
+    "label": "Sample prices – replace before launch",
+    "cameras": { "min": 1, "max": 64, "default": 4 },
+    "networkPoints": { "min": 0, "max": 50, "default": 0, "pricePerPoint": 3500 },
+    "locations": [
+      { "id": "home", "label": "Home", "icon": "home", "description": "House, flat or villa", "installMultiplier": 1.0 },
+      { "id": "office", "label": "Office", "icon": "office", "description": "Office or workspace", "installMultiplier": 1.05 },
+      { "id": "shop", "label": "Shop", "icon": "shop", "description": "Shop, showroom or warehouse", "installMultiplier": 1.0 },
+      { "id": "building", "label": "Building", "icon": "building", "description": "Apartments, plaza or factory", "installMultiplier": 1.2 }
+    ],
+    "placements": [
+      { "id": "indoor", "label": "Indoor", "description": "Inside rooms and corridors" },
+      { "id": "outdoor", "label": "Outdoor", "description": "Weatherproof cameras outside" },
+      { "id": "both", "label": "Both", "description": "A mix of indoor and outdoor" }
+    ],
+    "bothOutdoorShare": 0.5,
+    "cameraPrices": { "indoor": 6500, "outdoor": 9500 },
+    "nightVision": { "addOnPerCamera": 2500 },
+    "recordingOptions": [
+      { "days": 7, "label": "7 days" },
+      { "days": 15, "label": "15 days" },
+      { "days": 30, "label": "30 days" },
+      { "days": 60, "label": "60 days" }
+    ],
+    "storage": {
+      "gbPerCameraPerDay": 20,
+      "gbPerTb": 1000,
+      "drives": [
+        { "sizeTb": 1, "label": "1 TB", "price": 9000 },
+        { "sizeTb": 2, "label": "2 TB", "price": 14000 },
+        { "sizeTb": 4, "label": "4 TB", "price": 24000 },
+        { "sizeTb": 8, "label": "8 TB", "price": 42000 }
+      ]
+    },
+    "recorders": [
+      { "maxCameras": 4, "label": "4-channel", "price": 12000 },
+      { "maxCameras": 8, "label": "8-channel", "price": 18000 },
+      { "maxCameras": 16, "label": "16-channel", "price": 32000 },
+      { "maxCameras": 32, "label": "32-channel", "price": 60000 },
+      { "maxCameras": 64, "label": "64-channel", "price": 110000 }
+    ],
+    "installation": { "perCamera": 2500, "cablingPerCamera": 2000, "minimumCharge": 8000 },
+    "switchReservePorts": 2,
+    "switches": [
+      { "maxPorts": 8, "label": "8-port", "price": 6000 },
+      { "maxPorts": 16, "label": "16-port", "price": 12000 },
+      { "maxPorts": 24, "label": "24-port", "price": 22000 },
+      { "maxPorts": 52, "label": "48-port", "price": 45000 }
+    ],
+    "estimateRange": { "low": 0.92, "high": 1.12 },
+    "roundTo": 500,
+    "steps": [
+      { "id": "location", "title": "Where will the cameras go?", "help": "Pick the type of place. It changes the installation effort." },
+      { "id": "cameras", "title": "How many cameras?", "help": "Count every door, entrance, corridor and outside area you want covered." },
+      { "id": "placement", "title": "Indoor, outdoor or both?", "help": "Outdoor cameras are weatherproof and cost more." },
+      { "id": "nightVision", "title": "Do you need night vision?", "help": "Night vision lets cameras record clearly in the dark." },
+      { "id": "recording", "title": "How many days should it record?", "help": "More days need a bigger hard disk." },
+      { "id": "network", "title": "Any network points?", "help": "Network points are wired internet or LAN sockets for computers, Wi-Fi or phones. Enter 0 if you need none." }
+    ],
+    "previewExample": { "locationId": "shop", "cameras": "8", "placement": "both", "nightVision": "yes", "recordingDays": "30", "networkPoints": "2" },
+    "included": {
+      "indoorCameras": "{count} × indoor camera",
+      "outdoorCameras": "{count} × weatherproof outdoor camera",
+      "nightVision": "Night vision on all {count} cameras",
+      "recorder": "{label} video recorder",
+      "storage": "{storage} hard disk, about {days} days of recording",
+      "installation": "Installation, mounting and cabling for {count} cameras",
+      "networkPoints": "{points} × network point with cabling and wall plate",
+      "networkSwitch": "{label} network switch",
+      "phoneViewing": "Setup for viewing on your phone",
+      "survey": "Free site survey and final quotation"
+    }
+  },
+
+  "content": {
+    "seo": {
+      "home": { "title": "Solar & CCTV Calculators", "description": "Estimate your solar savings and CCTV installation cost in a few steps, then request a free site survey on WhatsApp." },
+      "solar": { "title": "Solar Savings Calculator", "description": "Enter your electricity bill or units to see a suggested solar system size, cost range, monthly savings and payback." },
+      "cctv": { "title": "CCTV & Networking Quick Quote", "description": "Choose cameras, night vision, recording days and network points to get an estimated CCTV price range." }
+    },
+    "hero": {
+      "headline": "Smarter Energy. Safer Spaces.",
+      "description": "Calculate your estimated solar savings and CCTV installation costs in just a few simple steps.",
+      "primaryCta": "Calculate Solar Cost",
+      "secondaryCta": "Get CCTV Quote"
+    },
+    "services": [
+      { "id": "solar", "icon": "sun", "title": "Solar Installation", "description": "Solar systems sized to your electricity use, installed on your roof and checked on site." },
+      { "id": "cctv", "icon": "camera", "title": "CCTV Security Systems", "description": "Indoor and outdoor cameras with night vision, recording and viewing on your phone." },
+      { "id": "network", "icon": "network", "title": "Networking Solutions", "description": "Structured cabling, network points and switches for homes, shops and offices." }
+    ],
+    "howItWorks": [
+      { "title": "Select your service", "text": "Choose the solar calculator or the CCTV quote." },
+      { "title": "Enter your requirements", "text": "Answer a few simple questions. No sign-up needed." },
+      { "title": "Get an estimated quotation", "text": "See a price range and what it includes." },
+      { "title": "Request a free site survey", "text": "Send your estimate to us on WhatsApp in one tap." }
+    ],
+    "faq": [
+      { "q": "What is net metering?", "a": "Net metering lets eligible solar customers send extra electricity to the grid and receive a credit on their bill. The rules and approval steps are set by the electricity distribution company and the regulator, and they can change, so we confirm the current process at your site survey." },
+      { "q": "What warranty do I get?", "a": "Solar panels, inverters, cameras and recorders normally carry manufacturer warranties, and the terms differ by brand and product. Your written quotation lists the warranty for each item so you know what is covered." },
+      { "q": "What maintenance is needed?", "a": "Solar panels need regular cleaning and an occasional check of the inverter and wiring. CCTV needs clean lenses, a quick check that every camera is recording, and a look at the hard disk. We explain the routine when we hand over the system." },
+      { "q": "How long does installation take?", "a": "It depends on the system size, roof or building access and equipment availability. After the site survey we give you an expected schedule in the quotation." },
+      { "q": "Is the calculator price final?", "a": "No. It gives a range based on typical conditions. The final price is confirmed after a free site survey, when we see your roof, wiring and building." }
+    ],
+    "disclaimer": "Estimate only, confirmed after a free site survey.",
+    "privacyNotice": "Your information is not stored on our website. Your enquiry will be shared directly with the installer through WhatsApp.",
+    "enquiryTitle": "Request your free site survey",
+    "enquiryButton": "Get My Free Site Survey",
+    "whatsapp": {
+      "greeting": "Hello {company}, I would like a free site survey.",
+      "solarServiceName": "Solar",
+      "cctvServiceName": "CCTV & Networking",
+      "headings": {
+        "service": "Service",
+        "customer": "My details",
+        "inputs": "What I entered",
+        "results": "Estimate"
+      }
+    }
+  }
+}
